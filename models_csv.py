@@ -32,7 +32,9 @@ class DataSession(Base):
     DREventParticipated = Column(String(30))
 
 class Interval(Base):
-    """Class for the interval data of the ev_charger"""
+    """Class for the interval data of the ev_charger
+    The name of the table is intentionally intervall with two l
+    because the word interval was reserved in mysql"""
 
     __tablename__ = "intervall"
     IntervalID = Column(String(30), primary_key=True)

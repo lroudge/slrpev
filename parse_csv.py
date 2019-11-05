@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Parses a csv file and puts the data in a MySQL database"""
+"""Parses a csv file and puts the data in a MySQL database
+First argument to the script is the mysql username, second is mysql password
+The name of the database is ecal_ev_charger"""
 
 import csv
 import sys
