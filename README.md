@@ -51,6 +51,13 @@ Password:
 ```
 And enter your password. If you decided to use another user you can replace root by that user name.
 
+This will put all the fake data in the tables. To wipe those tables but keep the fields, you can do inside mysql:
+```
+mysql> use ecal_ev_charger;
+mysql> truncate table intervall;
+mysql> truncate table session;
+```
+
 ### Install python3 and dependencies
 This might also depend on the version of Linux you're using.
 To install python3 on Ubuntu:
